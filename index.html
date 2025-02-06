@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+        <!-- Login Section -->
+        <div id="login-section" class="login-container">
+            <h1>Login with Google</h1>
+            <div id="g_id_onload"
+                data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                data-callback="handleLogin"
+                data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin"
+                data-type="standard"
+                data-size="large"
+                data-theme="outline"
+                data-text="sign_in_with"
+                data-shape="rectangular"
+                data-logo_alignment="left">
+            </div>
+        </div>
+    
+        <!-- Main Content (Hidden Initially) -->
+        <div id="main-content" style="display: none;">
+            <!-- Your existing Job Application Tracker content goes here -->
+            <header>
+                <h1>Job Application Tracker</h1>
+                <p>Track your job applications and stay organized!</p>
+            </header>
+    
+            <!-- Add Job Form, Job Board, etc. -->
+            <!-- ... -->
+              <!-- HEADER -->
+    <header>
+        <h1>Job Application Tracker</h1>
+        <p>Track your job applications and stay organized!</p>
+    </header>
+
+    <!-- STATISTICS SECTION -->
+    <section id="statistics">
+        <h2>Application Statistics</h2>
+        <div id="stats">
+            <p>Applied: <span id="applied-count">0</span></p>
+            <p>Interview: <span id="interview-count">0</span></p>
+            <p>Offer: <span id="offer-count">0</span></p>
+        </div>
+    </section>
+
+    <!-- ADD JOB FORM -->
+    <section id="add-job">
+        <h2>Add a New Job</h2>
+        <form id="job-form">
+            <input type="text" id="job-title" placeholder="Job Title" required>
+            <input type="text" id="company-name" placeholder="Company" required>
+            <input type="date" id="application-date">
+            <button type="submit">Add Job</button>
+        </form>
+    </section>
+
+    <!-- JOB BOARD (Kanban-Style) -->
+    <section id="job-board">
+        <div class="column" id="applied">
+            <h2>Applied</h2>
+            <div class="job-list"></div>
+        </div>
+        <div class="column" id="interview">
+            <h2>Interview</h2>
+            <div class="job-list"></div>
+        </div>
+        <div class="column" id="offer">
+            <h2>Offer</h2>
+            <div class="job-list"></div>
+        </div>
+    </section>
+
+    <!-- JOB API FETCH SECTION -->
+    <section id="job-api">
+        <h2>Job Listings</h2>
+        <div id="api-jobs"></div>
+    </section>
+
+        </div>
+   
+    
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
