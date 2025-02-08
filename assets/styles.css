@@ -3,8 +3,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff; /* White background */
-    color: #4b0082; /* Dark purple text */
+    background-color: #f9f9f9;
+    color: #333;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -17,10 +17,9 @@ body {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #6a0dad; /* Medium purple */
+    color: #6a0dad;
     text-transform: uppercase;
     letter-spacing: 2px;
-    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Statistics Section */
@@ -38,12 +37,12 @@ h1 {
 
 #stats p {
     font-size: 1.2rem;
-    color: #6a0dad; /* Medium purple */
+    color: #6a0dad;
 }
 
 /* Add Job Form */
 #add-job {
-    background-color: #f5f5f5; /* Light gray background */
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -67,7 +66,7 @@ h1 {
 
 #job-form button {
     padding: 10px;
-    background-color: #6a0dad; /* Medium purple */
+    background-color: #6a0dad;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -77,7 +76,7 @@ h1 {
 }
 
 #job-form button:hover {
-    background-color: #4b0082; /* Dark purple */
+    background-color: #4b0082;
 }
 
 /* Job Board Layout */
@@ -88,7 +87,7 @@ h1 {
     max-width: 1000px;
     gap: 20px;
     padding: 20px;
-    background-color: #f5f5f5; /* Light gray background */
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -99,8 +98,8 @@ h1 {
     border-radius: 10px;
     text-align: center;
     min-height: 250px;
-    background-color: #ffffff; /* White background */
-    border: 1px solid #e0e0e0; /* Light gray border */
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 
@@ -110,7 +109,7 @@ h1 {
 }
 
 .column h2 {
-    color: #6a0dad; /* Medium purple */
+    color: #6a0dad;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
@@ -125,8 +124,8 @@ h1 {
 
 .job-card {
     padding: 15px;
-    background-color: #ffffff; /* White background */
-    border: 1px solid #e0e0e0; /* Light gray border */
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
     cursor: grab;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
@@ -146,7 +145,7 @@ h1 {
 .schedule-btn {
     margin-top: 10px;
     padding: 5px 10px;
-    background-color: #6a0dad; /* Medium purple */
+    background-color: #6a0dad;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -155,7 +154,7 @@ h1 {
 }
 
 .schedule-btn:hover {
-    background-color: #4b0082; /* Dark purple */
+    background-color: #4b0082;
 }
 
 /* Job API Section */
@@ -164,7 +163,7 @@ h1 {
     width: 100%;
     max-width: 1000px;
     padding: 20px;
-    background-color: #f5f5f5; /* Light gray background */
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -173,20 +172,4 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes slideIn {
-    from { transform: translateX(-50px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
 }
